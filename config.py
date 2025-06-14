@@ -13,11 +13,9 @@ config = SimpleNamespace(
     dropout=0.1,
     emb_dropout=0.1,
     dim_head=32,
-
     batch_size=64,
     epochs=10,
     lr=3e-4,
-
     dataset_path='datasets/MNIST',
     device='cpu'  # or 'cpu'
 )

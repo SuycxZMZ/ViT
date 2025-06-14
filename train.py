@@ -7,13 +7,14 @@ from config import config
 from utils import accuracy, save_checkpoint, load_checkpoint
 from dataset import get_dataloaders
 from vit_pytorch.vit import ViT
+from vit_pytorch.vit_for_small_dataset import SmallViT
 
 def get_model():
     model = ViT(
         image_size=config.image_size,
         patch_size=config.patch_size,
         num_classes=config.num_classes,
-        dim=config.dim,
+        dim=config.dim, 
         depth=config.depth,
         heads=config.heads,
         mlp_dim=config.mlp_dim,
@@ -81,7 +82,6 @@ def validate(model=None, loader=None):
     avg_acc = total_acc / len(val_loader)
     print(f"[Val] Accuracy: {avg_acc:.4f}")
     return avg_acc
-
 def test():
     _, _, test_loader = get_dataloaders()
     model = get_model()
