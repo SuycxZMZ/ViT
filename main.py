@@ -26,5 +26,5 @@ print("Execution complete.")
 # The script is intended to be run in a Python environment where the train module is available.
 # The main function serves as the entry point for the script, ensuring that the appropriate function is called based on user input. 
 
-# 冲突合并测试, 这一句是main分支的修改，这一句是其他分支的修改
-# rebase测试, main分支的修改, 包括冲突合并测试的内容
+# 冲突合并测试, 这一句是main分支的修改，这一句是其他分支的修改, fix2
+# rebase测试, main分支的修改, 包括冲突合并测试的内容, fix1å
