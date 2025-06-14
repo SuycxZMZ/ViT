@@ -15,6 +15,7 @@ if __name__ == '__main__':
         test()
 
 print("Execution complete.")
+
 # This script serves as the entry point for the training, validation, and testing processes.
 # It uses argparse to handle command-line arguments for selecting the mode of operation.
 # The train, validate, and test functions are imported from the train module.
@@ -29,4 +30,5 @@ print("Execution complete.")
 # 冲突合并测试, 这一句是main分支的修改，这一句是其他分支的修改, fix2
 # rebase测试, main分支的修改, 包括冲突合并测试的内容, fix1
 # 这一句是 vit_small_dataset 的修改
+
 
